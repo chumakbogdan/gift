@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: #ffc0cb; /* Pink background */
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: inherit; /* Use the background color of the body */
+            border-radius: 10px;
+            border: 1px solid #ffc0cb; /* Border color matches background color */
+        }
+        h1 {
+            color: #e74c3c;
+            font-size: 36px; /* Increased font size */
+            font-family: 'Pacifico', cursive; /* Handwriting style font */
+        }
+        p {
+            font-size: 24px; /* Increased font size */
+            color: #333;
+            font-family: 'Pacifico', cursive; /* Same font as in h1 */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin-top: 20px;
+        }
+        .button {
+            margin: 0 10px; /* Add space between buttons */
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            border: none;
+            outline: none;
+            font-family: 'Pacifico', cursive; /* Same font as in h1 */
+        }
+        .accept-button {
+            background-color: #44c767; /* Soft green button color */
+            color: #fff;
+        }
+        .decline-button {
+            position: relative; /* Ensure the position is relative */
+            background-color: #e74c3c; /* Soft red button color */
+            color: #fff;
+        }
+        .button:hover {
+            background-color: #2ecc71; /* Darker green on hover */
+        }
+        .decline-button:hover {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1>🩷❤️🩵💜🤍💕💗💖💝</h1>
+    <p>Моя любимая Алиночка,</p>
+    <p>Ты не представляешь насколько важную роль ты играешь в моей жизни. Пусть мы и на расстоянии, ты все равно можешь легко наполнить мой день красками. Я очень ценю то, что ты у меня есть и в такой замечательный праздник я бы хотел чтобы ты была моей парой(или как говорится be my Valentine). Ты согласна?</p>
+    <div class="button-container">
+        <button class="button accept-button" onclick="window.location.href='Valentines Gift/page1.html'">Да</button>
+        <button class="button decline-button" onmouseover="teleportButton(this)">Нет</button>
+    </div>
+</div>
+
+<script>
+    function teleportButton(button) {
+        button.style.position = 'absolute';
+        button.style.top = Math.floor(Math.random() * window.innerHeight) + 'px';
+        button.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+    }
+</script>
+</body>
+</html>
